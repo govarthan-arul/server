@@ -3,19 +3,19 @@ const app = express()
 const mongoose = require('mongoose')
 const PORT = 5000
 const {MONGOURI} = require('./keys')
-const multer = require('multer')
+//const multer = require('multer')
 //const fs = require('fs')
 //const Imagemodel = require('./image.model')
 //const imgModel = require('./model');
-const bodyParser = require('body-parser')
+// const bodyParser = require('body-parser')
 //const path = require('path')
-require('dotenv/config');
+// require('dotenv/config');
 
 require('./models/user')
 require('./models/post')
 
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
+// app.use(bodyParser.urlencoded({ extended: false }))
+// app.use(bodyParser.json())
   
 
 app.use(express.json())

@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken')
 const {JWT_SECRET} = require('../keys')
 const requireLogin = require('../middleware/requireLogin')
 const {v1:uuidv1} = require('uuid')
-const { db, updateOne } = require('../image.model')
+// const { db, updateOne } = require('../image.model')
 router.use(express.json())
 
 
